@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admission form</title>
+    <style>
+    
+    body
+    {
+        background-color: rgb(4, 4, 89);
+    }
+
+.adm
+{
+    background-color: white ;
+    /* display: flex; */
+    float: right;
+    height: 150 px;
+    
+}
+.form
+{
+    background-color: rgb(124, 166, 203);
+    width: 730px;
+    margin: 65px;
+    padding: 30px;
+    margin-left: 320px;
+}
+.a
+{
+    display: flex;
+
+}
+input[type=text],[type=month],[type=number]{
+  
+        margin: 12px;
+        padding: 7px;
+        width: 200px;
+}
+input[type=email]
+{
+    margin: 15px;
+        padding: 7px;
+        width: 255px;
+}
+input[type=text]:focus,[type=month]:focus,[type=number]:focus,[type=email]:focus,select:focus {
+  background-color: lightblue;
+}
+
+label
+{
+    font-size: 23px;
+    margin: 17px;    
+}
+    input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+button
+{
+    border: 2px solid red;
+    float: right;
+    padding: 12px;
+    width: 100px;
+}
+
+button:hover
+{
+    background-color: black;
+    color: aliceblue;
+}
+    </style>
+</head>
+<body>
+    <div class="form">
+
+        <form>
+            <img src="form.jpg" width="300">
+            <div class="adm"><br><big>A.M.PATEL INSTITUTE OF COMPUTER STUDIES </big><br>
+                    Ganapat university ,kherava<br>
+                    info.ampics@ganpatuniversity.ac.in<br>
+                    https://ampics.guni.ac.in/<br>
+                     +91-02762-289039
+            </div><hr>
+            <h1>COLLAGE ADMISSION FORM</h1>
+            <p>Enter your admission information bellow</p><br>
+
+            <big>=> NAME</big>
+            <div class="a">
+             <span><input type="text" placeholder="first name"><p>first name</p></span>
+             <span><input type="text" placeholder="middle name"><p>middle name</p></span>
+             <span><input type="text" placeholder="last name"><p>last name</p></span>
+            </div>
+            <br>
+            <big>=> BIRTH DATE</big>
+            <div class="a">
+             <span><input type="month"><p>month</p></span>
+             <span><input type="number" placeholder="day"><p>day</p></span>
+             <span><input type="text" placeholder="year"><p>year</p></span>
+            </div>
+            <br>
+            <big>=> GENDER</big>  <big style="float: right;">=> E-MAIL ADDRESS</big><br><br>
+          <label style="margin: 12px;">  <input type="radio" value="male" name="gender">Male</label>
+          <label style="margin: 12px;">  <input type="radio" value="female" name="gender">Fmale</label>
+            
+          
+          <input type="email" placeholder="ex.myname@example.com" style="float: right; margin: 7px;"><br><br><br><br><br>
+
+          <big>=> PHONE NO.</big>  <big style="float: right;">=> CHOOSE YOUR COURSE</big>  <br>
+        <input type="number"placeholder="91+1234567890" style="margin: 18px; padding: 8px; width: 260px;">  <select style="float: right; margin: 18px; padding: 8px; width: 260px">
+                                <option>B.C.A</option>
+                                <option>M.C.A</option>
+                                <option>IMCA</option>
+                                <option>HON.BCA</option>
+                                </select><br><br><br>
+
+        <big>=> MAILING ADDRESS</big> <br>
+        <input type="text" style="margin: 18px; padding: 12px; width: 700px;" placeholder="street address"><br>street address
+        <input type="text" style="margin: 18px; padding: 12px; width: 700px;" placeholder="street address line 2"><br>street address line 2<br><br>
+
+        <input type="text" placeholder="city" style="margin: 12px;
+        padding: 7px;
+        width: 267px;">  <input type="text" placeholder="state/province" style="margin: 12px; float: right;
+        padding: 7px;
+        width: 267px;" ><br>
+        city<p style="float: right;">state/province</p><br>
+        <input type="text" style="margin: 18px; padding: 12px; width: 700px;" placeholder="postal/zip code"><br>postal/zip code<br><br><br>
+        <input type="text" style="margin: 18px; padding: 12px; width: 700px;" placeholder="pin code"><br>pin code<br><br><br>
+        
+        <big>=> LOGIN DETAILS</big> <br><br>
+        user id :<input type="text" placeholder="user id "  style="margin: 10px;
+        padding: 7px;
+        width: 266px;"> 
+        password :<input type="text" placeholder="password "  style="margin: 10px;
+        padding: 7px;
+        width: 260px;"> <br><br><br>
+
+<big>=> LANGUAGES KNOWN</big> <br><br>
+<label><input type="checkbox" name="l" value="gujarati">Gujarati</label>
+<label><input type="checkbox" name="l" value="hindi">hindi</label>
+<label><input type="checkbox" name="l" value="english">english</label>
+<label><input type="checkbox" name="l" value="other">other</label>
+        
+    <button>APPLY</button>
+</form>
+
+    </div>
+</body>
+</html>
